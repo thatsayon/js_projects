@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+</head>
+<body>
+    <div>
+        <h1>Book List</h1>
+
+        <form action="">
+            <div class="form-group">
+                <label for="book_name">Book Name</label>
+                <input type="text" id="book_name">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author Name</label>
+                <input type="text" id="author">
+            </div>
+
+            <div class="form-group">
+                <label for="year">Published Year</label>
+                <input type="number" id="year">
+            </div>
+
+            <button id="btn">Add Book</button>
+        </form>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Published Year</th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
