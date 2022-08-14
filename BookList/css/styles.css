@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+.maindiv {
+    width: 450px;
+    padding: 30px;
+}
+
+.form-group {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.form-group input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+input:focus ~ label {
+    transform: translateY(-20px);
+}
+
+.form-group label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
